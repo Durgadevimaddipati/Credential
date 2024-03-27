@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional statements</title>
+</head>
+<body>
+    <h>conditional statements<br>if statement</h><br>
+    <script>
+        var a = prompt("enter number")
+        var positive;
+        if(a>0){
+            alert("enter positive number")
+        }    
+        else{
+            alert("enter negative number")
+        }
+     </script>
+    <h> if else statement</h><br>
+    <p>student score</p>
+    <script>
+      var  score = prompt("enter marks")
+      var grade;
+      if(score>=90){
+      grade = "A"
+      }
+    else if(score>=80){
+    grade = "B"
+    }
+    else if(score>=70){
+    grade = "c"
+    }
+    else if(score>=60){
+    grade = "D"
+    }
+    else{
+    grade = "f"
+    }
+    console.log("marks :" + score + "grade :"+grade)
+    </script>
+    <h>switch statement</h>
+    <script>
+        var num1 = +prompt("enter the number1")
+        var num2 = +prompt("enter the number2")
+        var operation = prompt("enter which operation to do(+/-/*/ /)")
+        switch(operation){
+            case '+':
+                alert("Sum of two numbers is " + (num1+num2))
+                break;
+            case '-':
+                alert("Difference of two numbers is " + (num1-num2))
+                break;
+            case '*':
+                alert("Product of two numbers  is " + (num1*num2))
+                break;
+            case '/':
+                alert("Division of two numbers is " + (num1/num2))
+                break;
+                defalut:
+                alert("enter valid operation")
+        }
+    </script>
+    
+</body>
+</html>
